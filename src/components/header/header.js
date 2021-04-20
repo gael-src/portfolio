@@ -21,7 +21,7 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link className="nav--link" to="portfolio/contact">
+          <Link className="nav--link" to="/contact">
             Contact
           </Link>
         </li>
