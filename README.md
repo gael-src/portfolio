@@ -11,7 +11,12 @@ Portfolio Example
 
 ## NPM Packages:
 
-react-router-dom
+- react-router-dom
+- gh-pages
+
+## Web deploy:
+
+https://gael-src.github.io/portfolio/
 
 ### Structure
 
