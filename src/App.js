@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Main from "./components/main/main";
 import Work from "./components/work/work";
@@ -9,14 +9,28 @@ import Footer from "./components/footer/footer";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Work />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <Switch>
+          <Route path="/work">
+            <Work />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
